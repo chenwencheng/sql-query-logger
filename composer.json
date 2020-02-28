@@ -1,0 +1,33 @@
+{
+  "name": "kdd/sql-query-logger",
+  "description": "laravel sql查询日志",
+  "type": "library",
+  "keywords": [
+    "laravel-sql-logger",
+    "query-logger",
+    "lumen-query-logger",
+    "log-query"
+  ],
+  "authors": [
+    {
+      "name": "wencheng",
+      "email": "wencheng@kdd.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kdd\\SqlQueryLogger\\": "src/"
+    }
+  },
+    "extra": {
+    "laravel": {
+      "providers": [
+        "Kdd\\SqlQueryLogger\\Providers\\ServiceProvider"
+      ]
+    }
+  },
+  "license": "MIT"
+}
